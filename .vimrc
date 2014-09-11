@@ -56,6 +56,7 @@ set cursorline
 set shiftwidth=4
 set expandtab
 set autoindent
+set incsearch
 
 if has("gui_running")
     set guifont=Monaco\ for\ Powerline\ 12
