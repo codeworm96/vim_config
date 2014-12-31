@@ -10,8 +10,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'altercation/vim-colors-solarized'
-let g:solarized_italic = 0
+"Plugin 'altercation/vim-colors-solarized'
+"let g:solarized_italic = 0
+
+Plugin 'tomasr/molokai'
 
 Plugin 'bling/vim-airline'
 set laststatus=2
@@ -45,15 +47,15 @@ filetype plugin indent on    " required
 " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line 
+" Put your non-Plugin stuff after this line
 
 set t_Co=256
-colorscheme solarized
+colorscheme molokai
 set number
 syntax on
 set wildmenu
 set cursorline
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set autoindent
 set incsearch
@@ -66,3 +68,8 @@ if has("gui_running")
     set guioptions-=r
 endif
 
+"no bells
+set noerrorbells
+set visualbell
+set t_vb=
+au GuiEnter * set t_vb=
